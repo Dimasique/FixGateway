@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    // https://mvnrepository.com/artifact/org.quickfixj/quickfixj-all
+    compile group: 'org.quickfixj', name: 'quickfixj-all', version: '2.0.0'
+
+    // https://mvnrepository.com/artifact/org.quickfixj/quickfixj-core
+    compile group: 'org.quickfixj', name: 'quickfixj-core', version: '1.6.2'
+
+    // https://mvnrepository.com/artifact/org.quickfixj/quickfixj-messages-all
+    compile group: 'org.quickfixj', name: 'quickfixj-messages-all', version: '1.6.2'
+
+    compile group: 'postgresql', name: 'postgresql', version: '9.0-801.jdbc4'
+
+}
